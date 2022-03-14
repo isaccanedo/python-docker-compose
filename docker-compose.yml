@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  python:
+    build: .
+    ports:
+      - 8000:5000
+    volumes:
+      - ./app:/usr/src/app
+    command:
+      python app.py
